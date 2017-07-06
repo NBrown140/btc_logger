@@ -16,4 +16,4 @@ while True:
 	    w.writerow(row)
 	
 	# Wait 60 seconds
-	time.sleep(60)
+	#time.sleep(60)
