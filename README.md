@@ -9,4 +9,4 @@ Uses Bitstampy to make API calls to bitstamp and retrieve prices data.
 #### Setup cron job:
 crontab -e
 
-* * * * * python btc_logger.py
+\* \* \* \* \* python btc_logger.py
