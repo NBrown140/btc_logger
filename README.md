@@ -10,3 +10,7 @@ Uses Bitstampy to make API calls to bitstamp and retrieve prices data.
 crontab -e
 
 \* \* \* \* \* python btc_logger.py
+
+Useful cronjob tips:
+https://crontab.guru/examples.html
+http://yellerapp.com/posts/2015-01-12-the-worst-server-setup-you-can-make.html
