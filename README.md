@@ -3,6 +3,8 @@ Simple python script to log bitcoin price every minute. Used as a cronjob on a R
 
 Uses Bitstampy to make API calls to bitstamp and retrieve prices data.
 
+monthly_cleaner.py should be called at the very end of each month to process data.
+
 ### Dependencies:
 - Bistampy (installed throug pip; https://github.com/unwitting/bitstampy)
 
@@ -22,4 +24,4 @@ crontab -e
 #### Monthly cron job
 crontab -e
 
-0 0 1 \* \* python cleaner.py
+0 0 1 \* \* python monthly_cleaner.py
