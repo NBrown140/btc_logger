@@ -41,7 +41,7 @@ for serch_result,tag in zip(search_results, tags):
     median = np.medianpol_sub_array, axis=0)
     std = np.std(pol_sub_array, axis=0)
     # Make row
-    row = [ticker['timestamp'], avg[0], avg[1], median[0], median[1], std[0], std[1]]
+    row = [ticker['timestamp'], avg[0], median[0], std[0], avg[1], median[1], std[1]]
     # Save statistics
     specific_path = root_path.split('.')[0]+'_'+tag+root_path.split('.')[1]
     with open(specific_path, 'ab') as f:
