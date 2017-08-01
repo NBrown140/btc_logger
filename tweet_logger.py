@@ -39,9 +39,9 @@ for search_result,tag in zip(search_results, tags):
     # Remove excess lines in case less than tweet_count were found
     pol_sub_array = pol_sub_array[:count,:]
     # Compute statistics
-    avg = np.mean(pol_sub_array, axis=0)
-    median = np.median(pol_sub_array, axis=0)
-    std = np.std(pol_sub_array, axis=0)
+    avg = np.around(np.mean(pol_sub_array, axis=0), decimals=3)
+    median = np.around(np.median(pol_sub_array, axis=0), decimals=3)
+    std = np.around(np.std(pol_sub_array, axis=0), decimals=3)
     # Make row
     ticker = api.ticker()
     row = [ticker['timestamp'], avg[0], median[0], std[0], avg[1], median[1], std[1]]
