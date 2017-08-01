@@ -6,7 +6,7 @@ from textblob import TextBlob
 from bitstampy import api
 
 # Define number of tweets to search
-tweet_count = 30
+tweet_count = 100
 # Define tags to search
 tags = ['btc', 'bitcoin']
 # Define path to output csv
