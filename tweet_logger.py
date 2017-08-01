@@ -36,6 +36,8 @@ for search_result,tag in zip(search_results, tags):
         pol_sub_array[count,0] = analysis.sentiment.polarity
         pol_sub_array[count,1] = analysis.sentiment.subjectivity
         count += 1
+    # Remove excess lines in case less than tweet_count were found
+    pol_sub_array = pol_sub_array[:count,:]
     # Compute statistics
     avg = np.mean(pol_sub_array, axis=0)
     median = np.median(pol_sub_array, axis=0)
