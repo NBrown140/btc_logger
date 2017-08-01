@@ -38,7 +38,7 @@ for serch_result,tag in zip(search_results, tags):
         count += 1
     # Compute statistics
     avg = np.mean(pol_sub_array, axis=0)
-    median = np.medianpol_sub_array, axis=0)
+    median = np.median(pol_sub_array, axis=0)
     std = np.std(pol_sub_array, axis=0)
     # Make row
     row = [ticker['timestamp'], avg[0], median[0], std[0], avg[1], median[1], std[1]]
