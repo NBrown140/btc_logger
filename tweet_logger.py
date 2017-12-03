@@ -8,9 +8,9 @@ from bitstampy import api
 # Define number of tweets to search
 tweet_count = 100
 # Define tags to search
-tags = ['btc', 'bitcoin']
+tags = ['bitcoin', 'btc', 'eur', 'xrp', 'ltc', 'eth']
 # Define path to output csv
-root_path = r"D:\Bitcoin\bitcoin_twitterSentiment.csv"
+root_path = r"D:\Bitcoin\twitterSentiment.csv"
 
 # Authenticate Twitter API
 consumer_key= 'CONSUMER_KEY_HERE'
