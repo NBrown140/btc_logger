@@ -3,7 +3,10 @@
 import tweepy, csv
 import numpy as np
 from textblob import TextBlob
-from bitstampy import api
+import bitstamp.client
+
+# Get data from bitstamp
+public_client = bitstamp.client.Public()
 
 # Define number of tweets to search
 tweet_count = 100
@@ -43,8 +46,7 @@ for search_result,tag in zip(search_results, tags):
     median = np.around(np.median(pol_sub_array, axis=0), decimals=3)
     std = np.around(np.std(pol_sub_array, axis=0), decimals=3)
     # Make row
-    ticker = api.ticker()
-    row = [ticker['timestamp'], avg[0], median[0], std[0], avg[1], median[1], std[1]]
+    row = [public_client.ticker(base="btc", quote="usd")['timestamp'], avg[0], median[0], std[0], avg[1], median[1], std[1]]
     # Save statistics
     specific_path = root_path.split('.')[0]+'_'+tag+'.'+root_path.split('.')[1]
     with open(specific_path, 'ab') as f:
