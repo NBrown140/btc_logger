@@ -11,7 +11,7 @@ public_client = bitstamp.client.Public()
 # Define number of tweets to search
 tweet_count = 100
 # Define tags to search
-tags = ['bitcoin', 'btc', 'eur', 'xrp', 'ltc', 'eth', 'bhc']
+tags = ['bitcoin', 'btc', 'eur', 'xrp', 'ltc', 'eth', 'bch']
 # Define path to output csv
 root_path = r"D:\Bitcoin\twitterSentiment.csv"
 
