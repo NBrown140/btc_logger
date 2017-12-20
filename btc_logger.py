@@ -6,7 +6,7 @@ base_path = r"D:\Bitcoin"
 # Get data from bitstamp
 public_client = bitstamp.client.Public()
 
-currencies_list = ['btc', 'eur', 'xrp', 'ltc', 'eth']
+currencies_list = ['btc', 'eur', 'xrp', 'ltc', 'eth', 'bhc']
 
 for currency in currencies_list:
 	# Log data to file
