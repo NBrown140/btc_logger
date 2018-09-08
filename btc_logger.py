@@ -17,7 +17,8 @@ for currency in currencies_list:
 	public_client.ticker(base=currency, quote="usd")['low'], \
 	public_client.ticker(base=currency, quote="usd")['bid'], \
 	public_client.ticker(base=currency, quote="usd")['ask'], \
-	public_client.ticker(base=currency, quote="usd")['vwap']]    
+	public_client.ticker(base=currency, quote="usd")['vwap'], \
+	public_client.ticker(base=currency, quote="usd")['open']]    
 	print row
 	path_data = os.path.join(base_path, "bitstamp_"+currency+"_usd.csv")
 	with open(path_data, 'ab') as f:
